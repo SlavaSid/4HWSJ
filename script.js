@@ -81,8 +81,10 @@ let vegetables = ["морковь", "баклажан", "репа", "топин�
 let nevVegetables = [];
 
 for(let i = 0; i < vegetables.length; i++){
-    
-    nevVegetables.push(`word: '${vegetables[i]}', length: ${vegetables[i].length}`);
+    newObject = {};
+    newObject.word = vegetables[i];
+    newObject.length = vegetables[i].length;
+    nevVegetables.push(newObject);
  
 }
 console.log(nevVegetables)
